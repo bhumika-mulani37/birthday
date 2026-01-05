@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Devendra 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- AGE POPUP -->
+<div id="agePopup" class="popup">
+  <div class="popup-content">
+    <h2>Hey Devendra 👀</h2>
+    <p>Before we start… enter your age 🎂</p>
+    <input type="number" id="ageInput" placeholder="Enter age">
+    <button onclick="submitAge()">Let’s Go 🎈</button>
+  </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" onclick="toggleMusic()">🎵 Play Music</button>
+
+<div id="balloons"></div>
+
+<!-- SECTION 1 -->
+<section id="section1" class="section text-center hidden">
+  <h1 class="neon-text big-title">Happy 20th Birthday Devendra 🎉</h1>
+
+  <p class="para">
+    Welcome to something made just for you.  
+    Not a normal wish. Not a normal card.  
+    Just a small digital memory filled with moments, emotions, and us 💙
+  </p>
+
+  <button class="action-btn" onclick="showSection2()">
+    Tap here for your first surprise 👇
+  </button>
+  <p class="hint">✨ The glowing button knows the way</p>
+</section>
+
+<!-- SECTION 2 – HIS IMAGE -->
+<section id="section2" class="section text-center hidden">
+  <img src="devendra.jpeg" class="photo-big">
+
+  <p class="para">
+    This is you.  
+    Strong in your own way, calm yet chaotic, serious when needed,  
+    and effortlessly funny when you don’t even try.
+    You have this rare ability to make people feel comfortable,
+    and honestly, the world feels lighter with you in it 💙
+  </p>
+
+  <button class="action-btn" onclick="showSection3()">
+    Don’t stop now… click me 😄
+  </button>
+  <p class="hint">👇 There’s more waiting</p>
+</section>
+
+<!-- SECTION 3 – CLASS 10 PHOTO -->
+<section id="section3" class="section text-center hidden">
+  <img src="class10.jpeg" class="photo-big">
+
+  <p class="para">
+    We met back in Class 10 — just classmates at first,
+    unaware that those random conversations, shared benches,
+    silly laughs, and stressful exams were laying the foundation
+    for something so real.
+    From notebooks to memories, from school days to now,
+    you’ve been a constant presence in my life.
+    Some friendships don’t fade with time — they grow stronger.
+    And you, Devendra, are proof of that 🫂💙
+  </p>
+
+  <button class="action-btn" onclick="showFinal()">
+    Ready for something emotional 💙
+  </button>
+  <p class="hint">✨ Last surprise ahead</p>
+</section>
+
+<!-- FINAL -->
+<section id="final" class="section text-center hidden">
+  <h2 class="neon-text">Always Remember This 💫</h2>
+
+  <p class="para">
+    You’re not just my best friend.  
+    You’re my comfort zone, my chaos partner,
+    and someone I’ll always be grateful for.
+    No matter where life takes us,
+    you’ll always have a special place in my heart.
+    Happy Birthday, Devendra 💙
+  </p>
+
+  <p class="signature">— Made with ❤️ by Bhoomika</p>
+</section>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
